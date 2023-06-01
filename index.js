@@ -40,11 +40,23 @@ let createGroc = () =>{
     <div class="item">
        <p>${data.text}</p>
            <div class="items-btn">
-           <i class="fa-solid fa-pencil"></i>
-           <i class="fa-solid fa-xmark"></i>
+           <i onClick="editList(this)" class="fas fa-edit"></i>
+           <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
               </div>
          
           </div>`;
 
           inputField.value = "";
 }
+
+// delete
+
+let deletePost = (e) => {
+    e.parentElement.parentElement.remove();
+  };
+
+  let editList =(e) =>{
+   inputField.value =e.parentElement.previousElementSibling.innerHTML;
+   e.parentElement.parentElement.remove();
+  };
+
