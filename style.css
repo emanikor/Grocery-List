@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grocery-list{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+#formLable input{
+    width: 300px;
+    padding: 10px 5px;
+
+}
+#GrocBtn{
+    width: 100px;
+    padding: 12px 5px;
+    margin: 0;
+    background-color: rgb(5, 156, 5);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+#GrocBtn:hover{
+    opacity: .6;
+}
+.lists{
+    margin-top: 0;
+  display: flex;
+  justify-content: center;
+ text-align: center;
+}
+.info-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.info-add h5{
+ padding-right: 250px;
+ margin-left: 20px;
+ font-size: 1rem;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: rgb(37, 37, 37);
+}
+.info-add span{
+    padding-right: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: rgb(37, 37, 37);
+   }
+   .tasks{
+    width:100%;
+    margin-top: 30px;
+}
+.item{
+    padding:10px;
+    border-radius: 5px;
+    /* box-shadow: 0 10px 30px rgba(0,0,0,0.1); */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item p{
+    font-size: 16px;
+    font-weight: 400px;
+    color: #111;
+    letter-spacing: 1px;
+}
+.item.completed p{
+    text-decoration: line-through;
+    color:#111;
+}
+.item-btn{
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    
+}
+.item-btn1 {
+    color: rgb(17, 17, 19);
+    cursor:pointer;
+    
+}
+.fa-solid fa-pencil{
+    margin-right: 2rem;
+}
