@@ -52,17 +52,21 @@
  color: rgb(37, 37, 37);
    }
    .tasks{
+   justify-content: center;
     width:100%;
     margin-top: 30px;
+
 }
 .item{
     padding:10px;
     border-radius: 5px;
-    /* box-shadow: 0 10px 30px rgba(0,0,0,0.1); */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* width: 280px; */
+    width:380px;
 }
 .item p{
     font-size: 16px;
@@ -85,6 +89,9 @@
     cursor:pointer;
     
 }
-.fa-solid fa-pencil{
+.fa-pencil{
     margin-right: 2rem;
+}
+.fa-trash-alt{
+  color: red;
 }
